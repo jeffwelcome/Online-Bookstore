@@ -41,7 +41,7 @@ end
 
   private
     def set_book
-      @book = Book.find(params[:id])
+      @book = Book.friendly.find(params[:id])
     end
 
     def book_params
